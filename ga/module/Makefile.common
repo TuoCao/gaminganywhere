@@ -22,7 +22,7 @@ MAKEMODULE	= $(CXX) -o $(TARGET) -dynamiclib -Wl,-undefined,dynamic_lookup $^ $(
 endif
 
 .cpp.o:
-	$(CXX) -c -g $(CFLAGS) $<
+	$(CXX) -c -g $(CFLAGS) $< -std=c++11
 
 .m.o:
 	$(CXX) -c -g $(CFLAGS) $<
